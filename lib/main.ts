@@ -1,6 +1,6 @@
 export function encode(bytes: Buffer): string {
   if (bytes === undefined) {
-    throw new Error('bytes cannot be undefined');
+    throw new Error('The argument "bytes" cannot be undefined');
   }
 
   const str = bytes.toString('base64');
