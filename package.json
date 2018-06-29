@@ -1,6 +1,6 @@
 {
   "name": "fx28-node",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Base64 without padding",
   "main": "dist/lib/main.js",
   "types": "dist/lib/main.d.ts",
