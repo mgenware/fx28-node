@@ -1,6 +1,6 @@
 export function encode(bytes: Buffer): string {
   if (bytes === undefined) {
-    throw new Error('bytes cannot be undefined');
+    throw new Error('The argument "bytes" cannot be undefined');
   }
 
   const str = bytes.toString('base64');
@@ -16,7 +16,7 @@ export function _trimPadding(str: string): string {
 
 export function decode(str: string): Buffer {
   if (str === undefined) {
-    throw new Error('s cannot be undefined');
+    throw new Error('The argument "str" cannot be undefined');
   }
 
   return Buffer.from(_appendPadding(str), 'base64');
